@@ -1,5 +1,5 @@
 {
-  "name": "feed",
+  "name": "evolusite-feed",
   "version": "4.2.2",
   "description": "Feed is a RSS, Atom and JSON feed generator for Node.js, making content syndication simple and intuitive!",
   "homepage": "https://github.com/jpmonette/feed",
@@ -11,6 +11,8 @@
     "build": "rm -rf lib/ && mkdir lib && tsc",
     "prepublish": "yarn build",
     "test": "jest --silent",
+    "test-watch": "jest --watch",
+    "test-snapshot": "jest --updateSnapshot",
     "test-travis": "jest --coverage"
   },
   "keywords": [
@@ -51,6 +53,5 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/jpmonette/feed.git"
-  },
-  "packageManager": "yarn@3.2.1"
+  }
 }

@@ -2,6 +2,8 @@ import { Feed } from "../feed";
 
 export const updated = new Date("Sat, 13 Jul 2013 23:00:00 GMT");
 export const published = new Date("Sat, 10 Jul 2013 23:00:00 GMT");
+export const startDate = new Date("Sat, 7 Jul 2013 23:00:00 GMT");
+export const endDate = new Date("Sat, 6 Jul 2013 23:00:00 GMT");
 
 export const sampleFeed = new Feed({
   title: "Feed Title",
@@ -23,8 +25,8 @@ export const sampleFeed = new Feed({
   author: {
     name: "John Doe",
     email: "johndoe@example.com",
-    link: "https://example.com/johndoe?link=sanitized&value=2"
-  }
+    link: "https://example.com/johndoe?link=sanitized&value=2",
+  },
 });
 
 sampleFeed.addCategory("Technology");
@@ -41,6 +43,8 @@ sampleFeed.addItem({
   link: "https://example.com/hello-world?link=sanitized&value=2",
   description: "This is an article about Hello World.",
   content: "Content of my item",
+  "dc:date": startDate,
+  "imp:endDate": endDate,
   author: [
     {
       name: "Jane Doe",
@@ -54,7 +58,7 @@ sampleFeed.addItem({
     },
     {
       name: "Joe Smith, Name Only",
-    }
+    },
   ],
   contributor: [
     {

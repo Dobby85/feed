@@ -27,18 +27,16 @@ describe("rss 2.0", () => {
       ],
       extensions: [
         {
-          name: "_item_extension_1",
-          objects: {
-            about: "just an item extension example",
-            dummy1: "example",
-          },
+          name: "dc:date",
+          objects: new Date("2024-04-05"),
         },
         {
-          name: "_item_extension_2",
-          objects: {
-            about: "just a second item extension example",
-            dummy1: "example",
-          },
+          name: "imp:endDate",
+          objects: new Date("2024-04-06"),
+        },
+        {
+          name: "str",
+          objects: "coucou",
         },
       ],
       category: [
@@ -78,18 +76,16 @@ describe("rss 2.0", () => {
       ],
       extensions: [
         {
-          name: "_item_extension_1",
-          objects: {
-            about: "just an item extension example",
-            dummy1: "example",
-          },
+          name: "dc:date",
+          objects: new Date("2024-04-05"),
         },
         {
-          name: "_item_extension_2",
-          objects: {
-            about: "just a second item extension example",
-            dummy1: "example",
-          },
+          name: "imp:endDate",
+          objects: new Date("2024-04-06"),
+        },
+        {
+          name: "str",
+          objects: "coucou",
         },
       ],
       category: [
@@ -128,18 +124,12 @@ describe("rss 2.0", () => {
       ],
       extensions: [
         {
-          name: "_item_extension_1",
-          objects: {
-            about: "just an item extension example",
-            dummy1: "example",
-          },
+          name: "dc:date",
+          objects: new Date("2024-04-05"),
         },
         {
-          name: "_item_extension_2",
-          objects: {
-            about: "just a second item extension example",
-            dummy1: "example",
-          },
+          name: "imp:endDate",
+          objects: new Date("2024-04-06"),
         },
       ],
       category: [
@@ -195,22 +185,7 @@ describe("rss 2.0", () => {
           link: "https://example.com/joesmith",
         },
       ],
-      extensions: [
-        {
-          name: "_item_extension_1",
-          objects: {
-            about: "just an item extension example",
-            dummy1: "example",
-          },
-        },
-        {
-          name: "_item_extension_2",
-          objects: {
-            about: "just a second item extension example",
-            dummy1: "example",
-          },
-        },
-      ],
+      extensions: [],
       category: [
         {
           name: "Grateful Dead",
